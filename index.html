@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maison Sucrée — boulangerie-pâtisserie artisanale à Marseille. Pâtisseries, pains et café faits maison.">
+  <title>Maison Sucrée — Boulangerie artisanale à Marseille</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Maison Sucrée</a>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav__link" href="index.html">Accueil</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link" href="about.html">À propos</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html" aria-label="Voir la commande">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>
+          </svg>
+          <span class="cart-badge" data-count="0"></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Présentation">
+      <div class="hero__media" role="img" aria-label="Vitrine de pâtisseries artisanales"></div>
+      <div class="container hero__content">
+        <h1>Boulangerie artisanale à Marseille</h1>
+        <p>Pâtisseries françaises, façonnées à la main chaque jour.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="menu.html">Découvrir le menu</a>
+          <a class="btn btn--secondary" href="contact.html">Nous rendre visite</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Nos spécialités</h2>
+          <p>Trois univers pour explorer la maison : gâteaux, viennoiseries et café.</p>
+        </div>
+        <div class="specialty-grid">
+          <a class="specialty-card" href="menu.html?filter=cakes">
+            <div class="specialty-card__bg" style="background-image:url('assets/images/specialty-cakes.svg')"></div>
+            <span>Gâteaux</span>
+          </a>
+          <a class="specialty-card" href="menu.html?filter=pastries">
+            <div class="specialty-card__bg" style="background-image:url('assets/images/specialty-pastries.svg')"></div>
+            <span>Viennoiseries</span>
+          </a>
+          <a class="specialty-card" href="menu.html?filter=drinks">
+            <div class="specialty-card__bg" style="background-image:url('assets/images/specialty-coffee.svg')"></div>
+            <span>Café</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Best-sellers</h2>
+          <p>Les essentiels préférés de nos clients — prix visibles, détails en un clic.</p>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>La maison</h2>
+          <p>
+            Maison Sucrée est une boulangerie-pâtisserie de quartier à Marseille.
+            Nous travaillons des recettes françaises avec des ingrédients soigneusement choisis,
+            pour une pâtisserie élégante, chaleureuse et accessible.
+          </p>
+          <a class="btn btn--secondary" href="about.html">Notre histoire</a>
+        </div>
+        <div class="split__media" role="img" aria-label="Atelier de la boulangerie"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Nous trouver</h2>
+          <p>Adresse et horaires toujours visibles — pour planifier votre visite.</p>
+        </div>
+        <div class="location-box" style="max-width:40rem;margin-inline:auto;">
+          <dl>
+            <dt>Adresse</dt>
+            <dd>12 rue Sainte, 13001 Marseille, France</dd>
+            <dt>Horaires</dt>
+            <dd>Mar–Sam : 7h30 – 19h30<br>Dimanche : 8h00 – 13h00<br>Lundi : fermé</dd>
+            <dt>Contact</dt>
+            <dd>04 91 00 00 00 · bonjour@maisonsucree.fr</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Maison Sucrée</h3>
+        <p>Boulangerie-pâtisserie artisanale à Marseille. Qualité, chaleur et simplicité.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <div class="footer-nav">
+          <a href="index.html">Accueil</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Commande</a>
+        </div>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <p class="small">Mar–Sam 7h30–19h30<br>Dim 8h00–13h00<br>Lun fermé</p>
+        <p class="small">12 rue Sainte, 13001 Marseille</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Maison Sucrée — Projet académique Da Vinci</span>
+      <span>Marseille, France</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

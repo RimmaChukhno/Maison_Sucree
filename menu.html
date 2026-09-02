@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu Maison Sucrée — gâteaux, viennoiseries, pains et boissons.">
+  <title>Menu — Maison Sucrée</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Maison Sucrée</a>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav__link" href="index.html">Accueil</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link" href="about.html">À propos</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html" aria-label="Voir la commande">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>
+          </svg>
+          <span class="cart-badge" data-count="0"></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-hero">
+      <h1>Notre menu</h1>
+      <p>Parcourez nos créations par catégorie. Les prix sont affichés sur chaque carte.</p>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filtrer par catégorie">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" class="filter-btn" data-filter="cakes" aria-pressed="false">Gâteaux</button>
+          <button type="button" class="filter-btn" data-filter="pastries" aria-pressed="false">Viennoiseries</button>
+          <button type="button" class="filter-btn" data-filter="bread" aria-pressed="false">Pains</button>
+          <button type="button" class="filter-btn" data-filter="drinks" aria-pressed="false">Boissons</button>
+        </div>
+        <div class="product-grid" id="menu-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Maison Sucrée</h3>
+        <p>Boulangerie-pâtisserie artisanale à Marseille.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <div class="footer-nav">
+          <a href="index.html">Accueil</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <p class="small">Mar–Sam 7h30–19h30 · Dim 8h00–13h00 · Lun fermé</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Maison Sucrée — Projet académique Da Vinci</span>
+      <span>Marseille, France</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* Applique ?filter=… depuis l’accueil (spécialités) */
+    document.addEventListener("DOMContentLoaded", function () {
+      var params = new URLSearchParams(window.location.search);
+      var filter = params.get("filter");
+      if (!filter) return;
+      var btn = document.querySelector('.filter-btn[data-filter="' + filter + '"]');
+      if (btn) btn.click();
+    });
+  </script>
+</body>
+</html>
