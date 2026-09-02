@@ -6,21 +6,15 @@
 
 ## Jour 1 — Recherche + UX
 
-**Matin**
-
 - [x] Comprendre le brief Da Vinci
 - [x] Analyse concurrentielle (3 sites)
 - [x] Personas (3)
-
-**Après-midi**
 
 - [x] Questionnaire (8 questions)
 - [x] Résultats simulés clairement étiquetés
 - [x] Exigences UX (UX-01 → UX-07)
 - [x] Architecture de l’information
 - [x] User flows (3)
-
-**Soir**
 
 - [x] Wireframes basse fidélité
 
@@ -59,19 +53,13 @@
 
 ## Jour 4 — Tests + présentation
 
-**Matin**
-
 - [ ] Tests manuels navigateur (Chrome / Firefox / mobile)
 - [ ] Remplacer le test simulé par un vrai test (3–5 personnes) si possible
 - [ ] Corriger bugs mineurs
 
-**Après-midi**
-
 - [ ] Captures d’écran pour la présentation
 - [ ] Finaliser README / GitHub
 - [ ] Répéter la démo
-
-**Soir**
 
 - [ ] Présentation 12 slides
 - [ ] Préparer les réponses code review
@@ -92,13 +80,13 @@
 
 ## Critères de succès
 
-1. Comprendre Maison Sucrée immédiatement  
-2. Trouver le menu  
-3. Filtrer  
-4. Ouvrir un produit  
-5. Lire les infos  
-6. Ajouter à la commande  
-7. Modifier le panier  
-8. Trouver l’adresse  
-9. Trouver les horaires  
-10. Desktop + mobile confortables  
+1. Comprendre Maison Sucrée immédiatement
+2. Trouver le menu
+3. Filtrer
+4. Ouvrir un produit
+5. Lire les infos
+6. Ajouter à la commande
+7. Modifier le panier
+8. Trouver l’adresse
+9. Trouver les horaires
+10. Desktop + mobile confortables
