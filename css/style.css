@@ -325,7 +325,7 @@ p {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(44, 36, 32, 0.25) 0%, rgba(44, 36, 32, 0.72) 100%),
-    url("../assets/images/hero.svg") center / cover no-repeat,
+    url("../assets/images2/hero.jpg") center / cover no-repeat,
     linear-gradient(135deg, #8a6a4f, #3d2a20);
 }
 
@@ -515,7 +515,7 @@ p {
   overflow: hidden;
   min-height: 280px;
   background:
-    url("../assets/images/about.svg") center / cover no-repeat,
+    url("../assets/images2/about.jpg") center / cover no-repeat,
     var(--color-bg-alt);
 }
 

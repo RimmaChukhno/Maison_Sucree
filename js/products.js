@@ -12,7 +12,7 @@ const PRODUCTS = [
     price: 6.5,
     ingredients: "Fraises, farine, beurre, sucre, œufs, lait, vanille.",
     allergens: "Gluten, œufs, lait.",
-    image: "assets/images/strawberry-tart.svg",
+    image: "assets/images2/Tarte-aux-fraises.jpg",
     featured: true
   },
   {
@@ -25,7 +25,7 @@ const PRODUCTS = [
     price: 5.8,
     ingredients: "Amandes, œufs, sucre, beurre, chocolat, café, farine.",
     allergens: "Gluten, œufs, lait, fruits à coque.",
-    image: "assets/images/opera.svg",
+    image: "assets/images2/Opera.jpg",
     featured: true
   },
   {
@@ -38,7 +38,7 @@ const PRODUCTS = [
     price: 5.5,
     ingredients: "Citron, farine, beurre, sucre, œufs.",
     allergens: "Gluten, œufs, lait.",
-    image: "assets/images/lemon-tart.svg",
+    image: "assets/images2/Tarte-au-citron.jpg",
     featured: false
   },
   {
@@ -51,7 +51,7 @@ const PRODUCTS = [
     price: 1.8,
     ingredients: "Farine, beurre, lait, sucre, levure, sel.",
     allergens: "Gluten, lait.",
-    image: "assets/images/croissant.svg",
+    image: "assets/images2/Croissant.jpg",
     featured: true
   },
   {
@@ -64,7 +64,7 @@ const PRODUCTS = [
     price: 1.9,
     ingredients: "Farine, beurre, chocolat, lait, sucre, levure, sel.",
     allergens: "Gluten, lait, soja.",
-    image: "assets/images/pain-chocolat.svg",
+    image: "assets/images2/Pain-au-chocolat.jpg",
     featured: true
   },
   {
@@ -77,7 +77,7 @@ const PRODUCTS = [
     price: 4.2,
     ingredients: "Farine, beurre, œufs, lait, sucre, cacao, chocolat.",
     allergens: "Gluten, œufs, lait.",
-    image: "assets/images/eclair.svg",
+    image: "assets/images2/Eclair-au-chocolat.jpg",
     featured: false
   },
   {
@@ -90,7 +90,7 @@ const PRODUCTS = [
     price: 1.4,
     ingredients: "Farine de blé, eau, sel, levure.",
     allergens: "Gluten.",
-    image: "assets/images/baguette.svg",
+    image: "assets/images2/Baguette-tradition.jpg",
     featured: false
   },
   {
@@ -103,7 +103,7 @@ const PRODUCTS = [
     price: 3.5,
     ingredients: "Farine de blé, farine de seigle, eau, sel, levain.",
     allergens: "Gluten.",
-    image: "assets/images/campagne.svg",
+    image: "assets/images2/Pain-de-campagne.jpg",
     featured: false
   },
   {
@@ -116,7 +116,7 @@ const PRODUCTS = [
     price: 4.0,
     ingredients: "Farine, beurre, œufs, lait, sucre, levure, sel.",
     allergens: "Gluten, œufs, lait.",
-    image: "assets/images/brioche.svg",
+    image: "assets/images2/Brioche.jpg",
     featured: false
   },
   {
@@ -129,7 +129,7 @@ const PRODUCTS = [
     price: 2.5,
     ingredients: "Café, lait.",
     allergens: "Lait.",
-    image: "assets/images/cafe.svg",
+    image: "assets/images2/Cafe-creme.jpg",
     featured: false
   },
   {
@@ -142,7 +142,7 @@ const PRODUCTS = [
     price: 3.2,
     ingredients: "Chocolat, lait, sucre.",
     allergens: "Lait, soja.",
-    image: "assets/images/chocolat-chaud.svg",
+    image: "assets/images2/Chocolat-chaud.jpg",
     featured: false
   },
   {
@@ -154,7 +154,7 @@ const PRODUCTS = [
     price: 2.8,
     ingredients: "Thé vert, eau.",
     allergens: "Aucun allergène majeur.",
-    image: "assets/images/the.svg",
+    image: "assets/images2/The-vert.jpg",
     featured: false
   }
 ];
